@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}About Us{% endblock %}
+
+{% block content %}
+    <h1>This is the About Page</h1>
+    <a href="/">Return to the Main Page</a>
+    {% for i in data %}
+        <h3>{{ i.title }}</h3> <p>{{ i.dis }}</p>
+    {% endfor %}
+{% endblock %}
